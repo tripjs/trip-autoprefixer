@@ -1,7 +1,7 @@
 {
   "name": "trip-autoprefixer",
   "description": "Adds vendor prefixes to CSS.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Callum Locke",
   "babel": {
     "presets": [
