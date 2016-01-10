@@ -11,7 +11,7 @@
   "dependencies": {
     "autoprefixer": "^6.2.3",
     "chalk": "^1.1.1",
-    "lazy-builder": "^0.0.2",
+    "lazy-builder": "^0.0.3",
     "lodash": "^3.10.1",
     "micromatch": "^2.3.7",
     "postcss": "^5.0.14"
