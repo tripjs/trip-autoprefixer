@@ -1,0 +1,44 @@
+{
+  "name": "trip-autoprefixer",
+  "description": "Adds vendor prefixes to CSS.",
+  "version": "0.0.0",
+  "author": "Callum Locke",
+  "babel": {
+    "presets": [
+      "es2015-node4"
+    ]
+  },
+  "dependencies": {
+    "autoprefixer": "^6.2.3",
+    "chalk": "^1.1.1",
+    "lazy-builder": "^0.0.2",
+    "lodash": "^3.10.1",
+    "micromatch": "^2.3.7",
+    "postcss": "^5.0.14"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-preset-es2015-node4": "^2.0.2",
+    "eslint": "^1.10.3",
+    "eslint-config-trip": "^1.0.1",
+    "eslint-plugin-babel": "^3.0.0",
+    "rimraf": "^2.5.0"
+  },
+  "eslintConfig": {
+    "extends": "trip"
+  },
+  "files": [
+    "dist"
+  ],
+  "jsnext:main": "src/index.js",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": "tripjs/trip-autoprefixer",
+  "scripts": {
+    "build": "rimraf dist && babel src --out-dir dist --source-maps",
+    "buildwatch": "rimraf dist && babel src --out-dir dist --source-maps --watch",
+    "prepublish": "npm run build",
+    "test": "eslint ."
+  }
+}
